@@ -1,0 +1,14 @@
+* {
+    fg:         #d3d3d3;
+    bg:         #1c1c1c;
+
+    black:      #222222;
+    red:        #ee2244;
+    green:      #55cc33;
+    yellow:     #eebb33;
+    blue:       #1155ee;
+    magenta:    #6666ee;
+    cyan:       #00aa99;
+    white:      #cccccc;
+
+}

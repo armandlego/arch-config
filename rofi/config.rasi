@@ -1,0 +1,69 @@
+configuration{
+    modi: "drun";
+    lines: 15;
+    font: "Iosevka 12";
+    hide-scrollbar: true;
+    display-drun: " Apps ";
+}
+
+@theme "colors"
+
+element-text {
+    background-color: @bg;
+    text-color:       @fg;
+}
+
+window {
+    width: 50%;
+    height: 50%;
+}
+
+mainbox {
+    background-color: @bg;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: inherit;
+    padding: 2px;
+}
+
+prompt {
+    background-color: @blue;
+    padding: 6px;
+    text-color: @bg;
+    margin: 20px 0px 0px 20px;
+}
+
+listview {
+    border: 0px;
+    padding: 5px;
+    margin: 10px 20px;
+    columns: 3;
+    background-color: @bg;
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @fg;
+    background-color: @bg;
+}
+
+element {
+    padding: 3px;
+    margin: 2px;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element selected {
+    background-color: @blue ;
+    children:                       [ inputbar, listview ];
+    text-color: @bg ;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
