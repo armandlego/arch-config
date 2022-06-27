@@ -61,7 +61,7 @@ else
         echo "$LABEL_0 $CHARGE% ($REMAINING)"
         echo "$CHARGE%"
         echo $RED
-        dunstify -a   "Critical Battery Level" "<span color='$RED'>Only $CHARGE% left</span>"
+        dunstify -a  "Critical Battery Level" "<span color='$RED'>Only $CHARGE% left</span>"
     fi
 
 fi

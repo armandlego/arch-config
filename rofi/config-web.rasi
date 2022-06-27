@@ -1,0 +1,36 @@
+configuration{
+	modi: "none";
+	lines: 0;
+	font: "Iosevka Nerd Font 12";
+}
+
+
+@theme "colors"
+
+window {
+    width: 50%;
+    height: 6%;
+}
+
+mainbox {
+    background-color: @bg;
+		children: [inputbar];
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: inherit;
+    padding: 2px;
+}
+
+prompt {
+    background-color: @yellow;
+    padding: 20px;
+    text-color: @bg;
+}
+
+entry {
+		background-color: @bg;
+		text-color: @fg;
+		padding: 20px;
+}

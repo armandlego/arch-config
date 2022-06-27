@@ -3,7 +3,7 @@ configuration{
     lines: 15;
     font: "Iosevka Nerd Font 12";
     hide-scrollbar: true;
-    display-drun: " Apps";
+    display-drun: "   Apps ";
 }
 
 @theme "colors"

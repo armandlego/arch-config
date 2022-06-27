@@ -23,7 +23,7 @@ export EDITOR="$VISUAL"
 export PERL_DESTRUCT_LEVEL=2
 
 
-EMOJIS=(🍉 🫐 🍇 🍍 🎒 🧶 🌂 🍄 🌿 🍀 🌷 🦠 🐡 🥡 🍡 🍱 🫒 🥭 🌽 🗻 🧫 🫶 🫀 🧣 🧢 )
+EMOJIS=(🍉 🫐 🍇 🍍 🎒 🧶 🌂 🍄 🌿 🍀 🌷 🦠 🐡 🥡 🍡 🍱 🫒 🥭 🌽 🗻 🧫 🫶 🫀 🧣 🧢  🪩  🫧)
 
 RANDOM_EMOJI() {
   SELECTED_EMOJI=${EMOJIS[$RANDOM % ${#EMOJIS[@]}]};

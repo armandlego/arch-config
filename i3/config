@@ -52,7 +52,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10 && dunstify -h stri
 bindsym $mod+p exec --no-startup-id $HOME/.config/scripts/powermenu.sh
 
 # Mao
-bindsym $mod+o exec --no-startup-id "for i in {1..100}; do dunstify -a  -h int:value:$i -h string:x-dunst-stack-tag:mao ' ' ; done"
+bindsym $mod+o exec --no-startup-id "for i in {1..60}; do dunstify -a '♨o(>_<)o♨' -h int:value:$i -h string:x-dunst-stack-tag:mao ' ' ; sleep 1; done"
 
 # Screenshot
 bindsym Print exec --no-startup-id "maim -s -u | xclip -selection clipboard -t image/png && dunstify -a  Screenshot 'to clipboard'"
