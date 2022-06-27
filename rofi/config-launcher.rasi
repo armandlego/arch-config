@@ -1,9 +1,9 @@
 configuration{
     modi: "drun";
     lines: 15;
-    font: "Iosevka 12";
+    font: "Iosevka Nerd Font 12";
     hide-scrollbar: true;
-    display-drun: " Apps ";
+    display-drun: " Apps";
 }
 
 @theme "colors"
@@ -14,7 +14,7 @@ element-text {
 }
 
 window {
-    width: 50%;
+    width: 70%;
     height: 50%;
 }
 

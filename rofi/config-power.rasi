@@ -1,5 +1,5 @@
-configuration {
-	font:							"Iosevka 20";
+configuration  {
+	font:							"Iosevka Nerd Font 20";
 }
 
 @import "colors.rasi"

@@ -23,7 +23,7 @@ set_from_resource		$fg				.foreground	#FFF
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Iosevka 12
+font pango:Iosevka Nerd Font 12
 
 # gaps
 gaps inner 2
@@ -49,16 +49,16 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10 && dunstify -h st
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10 && dunstify -h string:x-dunst-stack-tag:light -h int:value:$(light) -a   "Brightness"
 
 # Show powermenu
-bindsym $mod+Shift+p exec --no-startup-id $HOME/.config/scripts/powermenu.sh
+bindsym $mod+p exec --no-startup-id $HOME/.config/scripts/powermenu.sh
 
 # Mao
 bindsym $mod+o exec --no-startup-id "for i in {1..100}; do dunstify -a  -h int:value:$i -h string:x-dunst-stack-tag:mao ' ' ; done"
 
 # Screenshot
-bindsym Print exec --no-startup-id "maim -s -u | xclip -selection clipboard -t image/png && dunstify -a  Screenshot 'to clipboard'"
-bindsym Shift+Print exec --no-startup-id "maim | xclip -selection clipboard -t image/png && dunstify -a  Screenshot 'to clipboard'"
-bindsym Ctrl+Print exec --no-startup-id "maim -s -u ~/Pictures/Screenshots/$(date +%s).png && dunstify -a  Screenshot 'to file'"
-bindsym Ctrl+Shift+Print exec --no-startup-id "maim ~/Pictures/Screenshots/$(date +%s).png && dunstify -a  Screenshot 'to file'"
+bindsym Print exec --no-startup-id "maim -s -u | xclip -selection clipboard -t image/png && dunstify -a  Screenshot 'to clipboard'"
+bindsym Shift+Print exec --no-startup-id "maim | xclip -selection clipboard -t image/png && dunstify -a  Screenshot 'to clipboard'"
+bindsym Ctrl+Print exec --no-startup-id "maim -s -u ~/Pictures/Screenshots/$(date +%s).png && dunstify -a  Screenshot 'to file'"
+bindsym Ctrl+Shift+Print exec --no-startup-id "maim ~/Pictures/Screenshots/$(date +%s).png && dunstify -a  Screenshot 'to file'"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -78,22 +78,22 @@ bindsym $mod+Shift+f exec nautilus -w
 bindsym $mod+a kill
 
 # start dmenu (a program launcher)
-bindsym $mod+e exec --no-startup-id rofi -show drun -disable-history
+bindsym $mod+e exec --no-startup-id rofi -theme $HOME/.config/rofi/config-launcher.rasi -show drun -disable-history
 
 # change focus
-bindsym $mod+q focus left
-bindsym $mod+s focus down
-bindsym $mod+z focus up
-bindsym $mod+d focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # move focused window
-bindsym $mod+Shift+q move left
-bindsym $mod+Shift+s move down
-bindsym $mod+Shift+z move up
-bindsym $mod+Shift+d move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # split in horizontal/vertical orientation
-bindsym $mod+h split h
+bindsym $mod+s split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
@@ -169,10 +169,10 @@ for_window [class="Spotify"] move to workspace $ws10
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        bindsym q resize shrink width 10 px or 10 ppt
-        bindsym z resize grow height 10 px or 10 ppt
-        bindsym s resize shrink height 10 px or 10 ppt
-        bindsym d resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
@@ -182,7 +182,7 @@ bar {
 	i3bar_command i3bar 
 	status_command i3blocks
 	position top
-	font pango:Iosevka Bold 11
+	font pango:Iosevka Nerd Font Bold 11
 	separator_symbol "  "
 	workspace_min_width 40
 

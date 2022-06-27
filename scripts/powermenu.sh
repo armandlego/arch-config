@@ -2,7 +2,7 @@ rofi_command="rofi -theme $HOME/.config/rofi/config-power.rasi -p "power""
 
 #### Options ###
 power_off=""
-reboot=""
+reboot=""
 lock=""
 suspend=""
 log_out=""

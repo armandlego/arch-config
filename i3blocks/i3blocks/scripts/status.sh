@@ -18,5 +18,5 @@ fi
 
 if [ $button ]
 then
-    i3-sensible-terminal -e gotop
+    i3-sensible-terminal -e btm
 fi

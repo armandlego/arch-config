@@ -69,7 +69,7 @@
 
     ### Text ###
 
-    font = Iosevka 11 
+    font = Iosevka Nerd Font 11 
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -163,12 +163,15 @@
     title = Dunst
     class = Dunst
 
-    background = "#1C1C1C"
-    foreground = "#D3D3D3"
-    highlight = "#aaaaee"
+    background = "#1f2329"
+    foreground = "#abb2bf"
+    highlight = "#d19a66"
     timeout = 10
 
 
-[signed_on]
+[playerupdate]
     appname = "Spotify"
+    script = ~/.config/dunst/i3blocksplayerupdate.sh
+[playerupdate2]
+    appname = "ncspot"
     script = ~/.config/dunst/i3blocksplayerupdate.sh

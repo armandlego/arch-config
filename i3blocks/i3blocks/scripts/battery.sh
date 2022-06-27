@@ -10,16 +10,16 @@ CHARGE=${arrRAW[3]}
 CHARGE=$(echo $CHARGE | sed 's/%//g')
 REMAINING=${arrRAW[4]}
 REMAINING=$(date -d $REMAINING +%R)
-LABEL_UNKNOWN=""
-LABEL_CHARGING=""
-LABEL_FULL=""
+LABEL_UNKNOWN=""
+LABEL_CHARGING=""
+LABEL_FULL=""
 
-LABEL_80=""
-LABEL_60=""
-LABEL_40=""
-LABEL_20=""
-LABEL_10=""
-LABEL_0=""
+LABEL_80=""
+LABEL_60=""
+LABEL_40=""
+LABEL_20=""
+LABEL_10=""
+LABEL_0=""
 
 if [[ $STATUS == "Unknown" ]]
 then

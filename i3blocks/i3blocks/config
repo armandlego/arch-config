@@ -12,9 +12,9 @@ command=$HOME/.config/i3blocks/scripts/sound.sh
 interval=once
 signal=10
 
-[perf]
-command=$HOME/.config/i3blocks/scripts/status.sh
-interval=once
+#[perf]
+#command=$HOME/.config/i3blocks/scripts/status.sh
+#interval=once
 
 [wifi]
 command=$HOME/.config/i3blocks/scripts/wifi.sh
@@ -24,6 +24,10 @@ interval=30
 command=$HOME/.config/i3blocks/scripts/battery.sh
 markup=pango
 interval=30
+
+[uptime]
+command=$HOME/.config/i3blocks/scripts/uptime.sh
+interval=60
 
 [date]
 command=$HOME/.config/i3blocks/scripts/date.sh

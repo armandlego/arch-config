@@ -7,7 +7,7 @@ HOUR=$(date +%H)
 
 if (($HOUR >= 20)) || (($HOUR < 8))
 then
-    echo -e "\uf186 $TIME"
+    echo -e "\ufa93 $TIME"
 else
-    echo -e "\uf185 $TIME"
+    echo -e "\ue30d  $TIME"
 fi

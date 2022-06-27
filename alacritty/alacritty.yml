@@ -1,47 +1,48 @@
+# Colors (One Dark)
 colors:
   # Default colors
   primary:
-    background: '0x1c1c1c'
-    foreground: '0xd3d3d3'
+    background: '#282c34'
+    foreground: '#abb2bf'
 
   # Normal colors
   normal:
-    black:   '0x222222'
-    red:     '0xee2244'
-    green:   '0x55cc33'
-    yellow:  '0xeebb33'
-    blue:    '0x1155ee'
-    magenta: '0x6666ee'
-    cyan:    '0x00aa99'
-    white:   '0xcccccc'
+    black:   '#282c34'
+    red:     '#e06c75'
+    green:   '#98c379'
+    yellow:  '#d19a66'
+    blue:    '#61afef'
+    magenta: '#c678dd'
+    cyan:    '#56b6c2'
+    white:   '#abb2bf'
 
   # Bright colors
   bright:
-    black:   '0x222222'
-    red:     '0xee5577'
-    green:   '0x77cc66'
-    yellow:  '0xeecc66'
-    blue:    '0x4477ee'
-    magenta: '0xaaaaee'
-    cyan:    '0xff7777'
-    white:   '0xeeeeee'
+    black:   '#5c6370'
+    red:     '#e06c75'
+    green:   '#98c379'
+    yellow:  '#d19a66'
+    blue:    '#61afef'
+    magenta: '#c678dd'
+    cyan:    '#56b6c2'
+    white:   '#ffffff'
 
 
 font:
   normal:
-    family: Iosevka
+    family: Iosevka Nerd Font
     style: Regular
 
   bold:
-    family: Iosevka
+    family: Iosevka Nerd Font 
     style: Bold
 
   italic:
-    family: Iosevka
+    family: Iosevka Nerd Font
     style: Italic
 
   bold_italic:
-    family: Iosevka
+    family: Iosevka Nerd Font
     style: Bold Italic
 
   size: 7
