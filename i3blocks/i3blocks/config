@@ -3,27 +3,27 @@ command=$HOME/.config/i3blocks/scripts/player.sh
 interval=30
 signal=11
 
-[waterreminder]
-command=$HOME/.config/i3blocks/scripts/water.sh
-interval=1800
-
 [sound]
 command=$HOME/.config/i3blocks/scripts/sound.sh
 interval=once
 signal=10
 
-#[perf]
-#command=$HOME/.config/i3blocks/scripts/status.sh
-#interval=once
+[bluetooth]
+command=$HOME/.config/i3blocks/scripts/bt.sh
+interval=30
 
 [wifi]
 command=$HOME/.config/i3blocks/scripts/wifi.sh
 interval=30
 
-[battery2]
-command=$HOME/.config/i3blocks/scripts/battery.sh
+[ram]
+command=$HOME/.config/i3blocks/scripts/ram.sh
 markup=pango
-interval=30
+interval=20
+
+[battery]
+command=$HOME/.config/i3blocks/scripts/battery.sh
+interval=60
 
 [uptime]
 command=$HOME/.config/i3blocks/scripts/uptime.sh
@@ -31,13 +31,11 @@ interval=60
 
 [date]
 command=$HOME/.config/i3blocks/scripts/date.sh
-markup=pango
 interval=60
 
 [time]
-command= $HOME/.config/i3blocks/scripts/time.sh
-markup=pango
-interval=60
+command=$HOME/.config/i3blocks/scripts/time.sh
+interval=10
 
 [tray margin]
 full_text=""

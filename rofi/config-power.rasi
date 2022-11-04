@@ -7,7 +7,8 @@ configuration  {
 window {
     background-color:               @bg;
     text-color:                     @fg;
-    width:                          54%;
+    width:                          100%;
+    height:                         100%;
 }
 
 mainbox {
@@ -17,15 +18,16 @@ mainbox {
 }
 
 listview {
-    padding : 4% 2%;
+    padding : 40% 7%;
     background-color:               @bg;
-    spacing:                        2%;
+    spacing:                        3%;
     scrollbar: false;
     cycle:  false;
     layout:    horizontal;
 }
 
 element {
+    margin : 0% 2%;
     background-color:               @black;
     text-color:                     @fg;
 }
@@ -34,11 +36,11 @@ element-text {
     background-color: 				inherit;
     text-color:       				inherit;
     horizontal-align:               0.5;
-    vertical-align:                 0.5;
-    padding:  6% 3.5%;
+    vertical-align:                 0;
+    padding:                8% 5%;
 }
 
 element selected {
-    background-color:               @magenta;
+    background-color:               @red;
     text-color:                     @bg;
 }

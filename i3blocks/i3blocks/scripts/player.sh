@@ -12,16 +12,6 @@ ICON_STOP=""
 CUR_ICON=""
 CUR_COL=""
 
-if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
-    $(playerctl previous)
-elif [[ "${BLOCK_BUTTON}" -eq 2 ]]; then
-    $(playerctl play-pause)
-elif [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
-    $(playerctl next)
-fi
-
-sleep 0.5
-
 PLAYER_STATUS=$(playerctl status)
 INFO_TITLE=$(playerctl metadata title)
 INFO_ALBUM=$(playerctl metadata album)
@@ -39,7 +29,7 @@ fi
 
 if [[ "${INFO_TITLE}" != "" ]] && [[ "${INFO_ARTIST}" != "" ]]; then
   TEXT=$(echo "${INFO_ARTIST} - ${INFO_TITLE}" |  sed 's/\(.\{45\}\).*/\1.../')
-  echo $TEXT $CUR_ICON
+  echo "$CUR_ICON  $TEXT"
   echo ""
   echo $CUR_COL
 fi

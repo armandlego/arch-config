@@ -9,28 +9,33 @@ if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx
 fi
 
-export PATH="$HOME/.local/bin_p:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin_p:$PATH"
 
-alias ls='ls -lh --color=auto'
+# Rust utilities
+alias ls='exa -l --git'
+
 alias grep='grep --color=auto'
 alias ip='ip -color=auto'
+alias br='br -sdp'
+alias nnn='nnn -dex'
 
+# Neovim
 alias vim='nvim'
-alias n='nvim'
 
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
-export PERL_DESTRUCT_LEVEL=2
 
+# NNN trash-cli
+export NNN_TRASH=1
 
-EMOJIS=(🍉 🫐 🍇 🍍 🎒 🧶 🌂 🍄 🌿 🍀 🌷 🦠 🐡 🥡 🍡 🍱 🫒 🥭 🌽 🗻 🧫 🫶 🫀 🧣 🧢  🪩  🫧)
-
+EMOJIS=(🍉 🫐 🍇 🍍 🎒 🧶 🌂 🍄 🌿 🍀 🌷 🦠 🐡 🥡 🍡 🍱 🫒 🥭 🌽 🗻 🧫 🫀 🧣 🧢 🪩 🫧 🩸 🔥 ⛄)
 RANDOM_EMOJI() {
   SELECTED_EMOJI=${EMOJIS[$RANDOM % ${#EMOJIS[@]}]};
   echo $SELECTED_EMOJI;
 }
 
-PS1='\[\e[0m\]$(RANDOM_EMOJI)  \[\e[0;1;34m\]\A \[\e[0;1;32m\]\W \[\e[0;1m\] \[\e[0m\]'
-export PS1
-# export PS1="\[\033[38;5;4m\]\A\[$(tput sgr0)\] : \w \[$(tput sgr0)\]\[\033[38;5;3m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+PS1='\[\e[0m\]$(RANDOM_EMOJI)  \[\e[0;1;34m\]\A \[\e[0;1;32m\]\W \[\e[0;1m\]\[\e[0;1;91m\]•❯\[\e[0m\] '
 
+export PS1
+
+source /home/arman/.config/broot/launcher/bash/br

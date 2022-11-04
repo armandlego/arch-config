@@ -1,2 +1,2 @@
-A=$(($(date +%-H) / 24))
-feh --bg-scale ~/.config/wallpapers/$A.jpg
+A=$(($(date +%-H) / 8))
+feh --bg-scale ~/.config/wallpapers/$A.png

@@ -1,4 +1,5 @@
 *.background: #282c34
+*.background: #181c24
 *.foreground: #abb2bf
 
 *.color0:#282c34
